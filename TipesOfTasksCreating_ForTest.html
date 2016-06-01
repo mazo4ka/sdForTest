@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://sdtest.ams.im:27895/" />
+<title>TipesOfTasksCreating_ForTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TipesOfTasksCreating_ForTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/sdtest.prod1390/Login.aspx?ReturnUrl=%2fsdtest.prod1390%2fPages%2fTasks.aspx%3fv2%3dtrue&amp;v2=true</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=loginC_UserName</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=loginC_Password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=loginC_LoginButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[68]</td>
+	<td></td>
+</tr>
+<!--//перейти в админку-->
+<tr>
+	<td>click</td>
+	<td>id=imgBtndictionarySettingsSharing</td>
+	<td></td>
+</tr>
+<!--//Типы задач-->
+<tr>
+	<td>click</td>
+	<td>id=ucAdminSettings_dictionarySettingsSharingRigthIssueTypes</td>
+	<td></td>
+</tr>
+<!--//добавление нового типа-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>//a[contains(text(),'Добавить тип задач')]</td>
+	<td>Добавить тип задачи</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Добавить тип задач</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Name</td>
+	<td>Настроенный тип</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=Description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.k-icon.k-update</td>
+	<td></td>
+</tr>
+<!--//изменение типа-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='lvIssueTypes']/div[3]/table/tbody/tr[3]/td/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=Description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Description</td>
+	<td>тип для тестирования реестров</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.k-icon.k-update</td>
+	<td></td>
+</tr>
+<!--//выхрод из системы-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.fa.fa-sign-out</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
